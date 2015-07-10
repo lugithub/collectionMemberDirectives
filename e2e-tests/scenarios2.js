@@ -1,11 +1,8 @@
 'use strict';
 
+/* https://github.com/angular/protractor/blob/master/docs/toc.md */
 
-
-
-var foo = 'foo';
-
-describe('my app', function() {
+describe('my app 2', function() {
 
   browser.get('index.html');
 
@@ -41,7 +38,7 @@ describe('my app', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
         toMatch(/partial for view 2/);
 
-      console.log('my app: ' + foo);
+      console.log('my app 2: ' + foo);
     });
 
   });

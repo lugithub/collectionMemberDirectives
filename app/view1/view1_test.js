@@ -1,5 +1,7 @@
 'use strict';
 
+var foo = 'myfoo';
+
 describe('myApp.view1 module', function() {
 
   beforeEach(module('myApp.view1'));
@@ -10,6 +12,8 @@ describe('myApp.view1 module', function() {
       //spec body
       var view1Ctrl = $controller('View1Ctrl');
       expect(view1Ctrl).toBeDefined();
+
+        console.log('view1 controller: ' + foo);
     }));
 
   });
